@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body onload="startRow()">
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row" id="first">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row" id="second">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row" id="third">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row" id="fourth">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<h3>Instructions for using the app</h3>
+				<p>The application starts automatically when it is loaded. Each row is selected at 1 second time interval, depicted by the green rectangle.
+				To select a specific button on the calculator, user needs to enter specific row where the button is, using  'z' key on the keyboard. Once user is inside the desired row,
+						each row keeps being highlighted at 1 second interval, using a blue square. To click on the desired button, user needs to press 'z' key when the button is
+				highlighted.</p>
+				<h3>Test Description</h3>
+				<p>The application has been tested with three versions:
+				<li> Navigation using two keys, one for moving to next button, another for selecting the button.[ 'q' for movement', 'm' for selection ] </li>
+				<li> Navigation using one key, continuous selection of row after 3 seconds of interval. </li>
+				<li> Navigation using one key, continuous selection of row after 1 second of interval. </li>
+				</p>
+				<p> User was given five equations : "5 * 55 + 26 - 3", 485 / 55 - 3", "5 /45 * 55 + 26 - 3", "6 * 12 + 12 - 6", "5 * 100 /25 + 26 - 3".
+				User was tested on three trials for each version: using back of the hand, using knuckles, using toes
+-				</p>
+			<h3>Test Result</h3>
+			<p>User has made errors in all trials and had to start over for completing the test. On average, more errors were made when using back of hand
+				and toes, than when using knuckles. When using two keys, user found difficulty , specially with the toe, as the keys were very far apart from each
+				other on the keyboard, and thus	took more time to complete compare to the other versions. He made 5 errors in this version. In the other two versions, the user took around 2 minutes
+			to complete each equation, and made 3 errors. However, the version with 3 seconds navigation interval caused more time delay for user and made him frustrated of waiting too much. 				
+			Overall, the user found the version with one key and 1 second interval to be the optimum.</p>
+				
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
